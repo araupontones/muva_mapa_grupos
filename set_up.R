@@ -1,13 +1,16 @@
 library(pacman)
 
 
-p_load(rio, sf, tidyverse, ggrepel, extrafont, cowplot)
+p_load(rio, sf, tidyverse, ggrepel, extrafont, cowplot, tidytext)
 
 
 #loadfonts(device = 'win')
 dir_shapes = "C:/mapa-risco-covid-mocambique/data/2.clean/districts.rds"
 dir_shapes_risk = "C:/Users/andre/Dropbox/Andres/03.Dashboards/11.MozambiqueRisk/data/Moz_shape"
 dir_data="datos"
+  
+  dir_data_raw = file.path(dir_data, "raw")
+  dir_data_clean = file.path(dir_data, "clean")
 dir_charts = 'charts'
 
 
